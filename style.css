@@ -1,3 +1,4 @@
+/* Variáveis */
 :root {
     /* Fontes */
     --momo-font: "Momo Trust Display", sans-serif;
@@ -6,6 +7,7 @@
     --mozilla-headline-font: "Mozilla Headline", sans-serif;
 
     /* Cores */
+    /* Verde */
     --classic-green-color-v1: #01925b;
     --classic-green-color-v2: #017d4f;
     --classic-green-color-v3: #0e634c;
@@ -13,17 +15,28 @@
     --classic-green-color-v5: #028252;
     --classic-green-color-v6: #89a574;
 
+    /* Bege */
     --classic-beige-color-v1: #fbe6cb;
     --classic-beige-color-v2: #e6c99d;
-    --classic-beige-color-v3: #e6ceaa;
+    --classic-beige-color-v3: #e3c598;
     --classic-beige-color-v4: #c89a5f;
     --classic-beige-color-v5: #7a5e38;
     --classic-beige-color-v6: #debe81;
     --classic-beige-color-v7: #553201;
     --classic-beige-color-v8: #482b02;
+
+    /* Branco */
+    --classic-white-color-v1: #f3fefd;
+    --classic-white-color-v2: #c3dad2;
+
+    /* Cinza */
+    --classic-gray-color-v1: #fbfbfb;
+
+    /* Hover */
+    --hover-effect-v1: #482b02cd;
 }
 
-
+/* Configurações Gerais */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -38,67 +51,101 @@ body {
     background-color: var(--classic-beige-color-v2);
 }
 
+/* Cabeçalho */
 header {
-    background-image: linear-gradient(to top, #9ca6c4, #7f92cc);
+    background-image: url("assets/header.png");
     padding: 1em;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header img.logo {
-    margin-right: 3em;
+    height: 5em;
 }
 
-header nav {
-    justify-content: space-between;
-    margin-top: 2em;
+header nav img.svg {
+    height: 37px;
 }
 
-header nav a.nav-link {
-    font: 900 1.5em var(--momo-font);
-    color: var(--classic-beige-color-v6);
-    border-radius: 7px;
-    padding: 5px 10px;
-    margin: 1em;
-
-    transition: all 0.3s ease-in-out;
+img.svg:hover::after {
+    content: "aasa";
 }
 
-header nav a.nav-link:hover {
-    color: var(--classic-beige-color-v4);
-}
-
+/* Conteúdo Principal */
 main {
-    background-image: url("assets/background.png");
-    background-position: center center;
-    background-size: 100% 100%;
-    height: 100vh;
+    box-shadow: 0px 0px 12px #9ba6c4;
+}
 
-    color: var(--classic-beige-color-v8);
+main section p {
+    font: bold 1.2em var(--mozilla-headline-font);
 }
 
 main section#welcome {
-    padding: 2em 10em;
+    background-image: url("assets/background.png");
+    color: var(--classic-beige-color-v8);
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100vh;
+    padding: 2em;
 }
 
+main section#welcome div {
+    text-align: center;
+    padding: 1em;
+}
 
 main section#welcome h1 {
-    font: bolder 5vw var(--archivo-font);
+    font: bolder 5em var(--archivo-font);
 }
 
 main section#welcome h2 {
-    font: bold 2.5vw var(--archivo-font);
+    font: bold 2.5em var(--archivo-font);
 }
 
-
-main section#welcome div#adventure {
-    margin-left: 120vh;
-}
-
-p {
-    font: bold 1.2em var(--mozilla-headline-font);
+main section#welcome p {
     margin: 0.2em;
 }
 
-strong {
+main section#welcome strong {
     text-shadow: 0 0 1px var(--classic-beige-color-v8);
+}
+
+main section#games {
+    background-image: url("assets/game-loading.png");
+    background-position: center center;
+    background-attachment: fixed; /* Efeito Paralaxe */
+    background-size: 100% 100%;
+    height: 100vh;
+    padding: 2em;
+
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+    color: var(--classic-white-color-v1);
+
+    text-align: center;
+}
+
+main section#games h2#available-games {
+    font: bold 2.5em var(--archivo-font);
+}
+
+main section#games article#minigames {
+    padding: 10px;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: var(--classic-green-color-v3);
+    text-align: center;
+    padding: 1.3em;
+}
+
+footer p {
+    text-shadow: 0 0 1px var(--classic-beige-color-v8);
+    color: var(--classic-beige-color-v2);
+}
+
+footer a {
+    color: var(--classic-beige-color-v4);
 }
