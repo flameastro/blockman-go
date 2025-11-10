@@ -16,15 +16,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Momo+Trust+Display&family=Mozilla+Headline:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
     <header>
-        <img src="assets/logo.png" class="logo" alt="Ícone do BlockMan Go">
+        <!-- # To Website -->
+        <a href="#" target="_self"><img src="assets/logo.png" class="logo" alt="Ícone do BlockMan Go"></a>
 
         <nav>
-            <a href="#" target="_self"><img src="assets/house.svg" alt="House" class="svg"></a>
-            <a href="#" target="_self"><img src="assets/play.svg" alt="Control" class="svg"></a>
+            <a href="#welcome" target="_self"><i class="fa-solid fa-house"></i></a>
+            <a href="#games" target="_self"><i class="fa-solid fa-gamepad"></i></a>
+
         </nav>
     </header>
 
@@ -53,15 +59,30 @@
 
             <article id="minigames">
                 <div id="bed-wars">
-                    <p>Bed Wars é um minigame de <strong>Combate</strong>, <strong>Estratégia</strong> e <strong>Equipe</strong>, podendo jogar solo ou em equipe.</p>
+                        <figure>
+                            <a href="https://play.google.com/store/apps/details?id=com.sandboxol.indiegame.bedwar&hl=pt_BR" target="_blank">
+                                <img src="assets/games/bed-wars.png" alt="Bed Wars">
+                                <figcaption>Bed Wars</figcaption>
+                            </a>
+                        </figure>
+                    <p>Bed Wars é um minigame de <strong>Combate</strong>, <strong>Estratégia</strong> e <strong>Equipe</strong>, onde seu objetivo é destruir as camas dos times aversários e ser o único sobrevivente junto com sua equipe.</p>
+                </div>
+
+                <div id="sky-block">
+                    <figure>
+                        <a href="https://play.google.com/store/apps/details?id=com.sandboxol.indiegame.skyblock&hl=pt_BR" target="_blank">
+                            <img src="assets/games/sky-block.png" alt="Sky Block">
+                            <figcaption>Sky Block</figcaption>
+                        </a>
+                    </figure>
+                    <p>Sky Block é um minigame de <strong>construção</strong> e modos adicionais de <strong>Batalha</strong> unindo temas de <strong>Estratégia</strong>. Você começa numa ilha e seu objetivo é <strong>Coletar Rescursos</strong> por meio de <strong>trocas</strong> o <strong>eventos</strong>. Com esses recursos coletados você pode comprar ou trocar itens.</p>
                 </div>
             </article>
         </section>
     </main>
 
     <footer>
-        <p>Site desenvolvido por <a href="https://github.com/flameastro" target="_blank">Flame Astro</a>. Saiba mais <a
-                href="https://github.com/flameastro/blockman-go" target="_blank">aqui</a>.</p>
+        <p>Site desenvolvido por <a href="https://github.com/flameastro" target="_blank">Flame Astro</a>. Saiba mais <a href="https://github.com/flameastro/blockman-go" target="_blank">aqui</a>.</p>
     </footer>
 </body>
 
