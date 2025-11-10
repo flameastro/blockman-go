@@ -64,13 +64,19 @@ header img.logo {
     height: 5em;
 }
 
-header nav img.svg {
-    height: 37px;
+header nav i {
+    margin: 10px;
+    font-size: 2em;
+    color: var(--classic-beige-color-v3);
+
+    transition: all 0.5s ease-in-out;
 }
 
-img.svg:hover::after {
-    content: "aasa";
+header nav i:hover {
+    text-shadow: 0px 0px 8px var(--classic-green-color-v3);
+    transform: scale(1.2);
 }
+
 
 /* Conteúdo Principal */
 main {
