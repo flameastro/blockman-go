@@ -83,9 +83,6 @@ main {
     box-shadow: 0px 0px 12px #9ba6c4;
 }
 
-main section p {
-    font: bold 1.2em var(--mozilla-headline-font);
-}
 
 main section#welcome {
     background-image: url("assets/background.png");
@@ -110,6 +107,7 @@ main section#welcome h2 {
 }
 
 main section#welcome p {
+    font: bold 1.2em var(--mozilla-headline-font);
     margin: 0.2em;
 }
 
@@ -135,10 +133,44 @@ main section#games h2#available-games {
     font: bold 2.5em var(--archivo-font);
 }
 
-main section#games article#minigames {
-    padding: 10px;
+main section#games article#minigames p {
+    font: 600 1.2em var(--mozilla-headline-font);
 }
 
+main section#games article#minigames {
+    background-color: rgba(190, 190, 190, 0.382);
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+main section#games article#minigames div {
+    background-color: rgba(0, 0, 0, 0.484);
+    padding: 10px;
+    margin: 10px;
+}
+
+main section#games article#minigames figure {
+    font: 700 1.3em var(--momo-font);
+}
+
+main section#games article#minigames div figure img {
+    height: 125px;
+    transition: all 0.4s ease-in-out;
+}
+
+main section#games article#minigames div figure img:hover {
+    box-shadow: 0px 0px 12.33px rgba(240, 248, 255, 0.344);
+}
+
+main section#games article#minigames div a {
+    color: var(--classic-beige-color-v2);
+    text-decoration: none;
+}
+
+figure img {
+    border-radius: 25%;
+}
 
 /* Rodapé */
 footer {
