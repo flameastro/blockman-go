@@ -96,7 +96,7 @@ main {
 }
 
 main section#welcome {
-    background-image: url("assets/background.png");
+    background-image: url("assets/banners/big/banner1-big.png");
     color: var(--classic-beige-color-v8);
     background-position: center center;
     background-size: 100% 100%;
@@ -127,11 +127,18 @@ main section#welcome h2 {
 }
 
 main section#games {
-    background-image: url("assets/game-loading.png");
+    background-image: url("assets/banners/big/banner2-big.png");
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
     color: var(--classic-white-color-v1);
     background-position: center center;
     background-attachment: fixed; /* Efeito Paralaxe */
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+main section#games2 {
+    background-image: url("assets/banners/big/banner3-big.png");
+    background-position: center center;
     background-size: 100% 100%;
     height: 100vh;
 }
@@ -148,7 +155,7 @@ main section#games article#minigames {
     border-radius: 7px;
     margin: 0 auto;
     padding: 10px;
-    width: 50%;
+    width: 75%;
 }
 
 main section#games article#minigames div {
@@ -169,7 +176,7 @@ main section#games article#minigames div a {
 }
 
 main section#games article#minigames div figure img {
-    height: 125px;
+    height: 95px;
     transition: all 0.4s ease-in-out;
 }
 
@@ -192,7 +199,7 @@ main section#games article#minigames div figure img:hover {
 
 main section#faq {
     background-image: linear-gradient(to bottom, var(--classic-green-color-v1), var(--classic-green-color-v2), var(--classic-green-color-v3), var(--classic-green-color-v1));
-    padding: 30px;
+    padding: 10px;
 }
 
 main section#faq h2 {
@@ -254,4 +261,110 @@ footer a {
 
 footer a:visited {
     color: var(--classic-beige-color-v7);
+}
+
+
+/* Media Queries */
+@media (max-width: 1350px) {
+    main section#games article#minigames {
+        padding: 5px;
+        width: 95%;
+    }
+
+    main section#games article#minigames div figure img {
+        height: 65px;
+        transition: all 0.4s ease-in-out;
+    }
+}
+
+
+@media (max-width: 768px) {
+    main section#welcome {
+        background-image: url("assets/banners/medium/banner1-medium.png");
+        padding: 1em;
+    }
+
+    main section#welcome h1 {
+        font: bolder 2em var(--archivo-font);
+    }
+
+    main section#welcome h2 {
+        font: bold 1.5em var(--archivo-font);
+    }
+
+    main section#welcome p {
+        font: bold 1em var(--mozilla-headline-font);
+        margin: 0em;
+    }
+
+    main section#games {
+        background-image: url("assets/banners/medium/banner2-medium.png");
+    }
+
+    main section#games h2 {
+        font: bold 1.5em var(--archivo-font);
+        text-align: center;
+        padding: 10px;
+    }
+
+    main section#games article#minigames div {
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    main section#games article#minigames div p {
+        font: 700 90% var(--mozilla-headline-font);
+        padding: 2px;
+    }
+
+    main section#games article#minigames div figure figcaption {
+        text-align: center;
+        font-size: 0.5em;
+    }
+
+    main section#games2 {
+        background-image: url("assets/banners/medium/banner3-medium.png");
+    }
+
+    main section#faq article {
+        padding: 1em;
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 481px) {
+    main section#welcome {
+        background-image: url("assets/banners/small/banner1-small.png");
+    }
+
+    main section#games {
+        background-image: url("assets/banners/small/banner2-small.png");
+    }
+
+    main section#games2 {
+        background-image: url("assets/banners/small/banner3-small.png");
+    }
+
+    main section#faq h2 {
+        font: 600 1.5em var(--stack-font);
+        text-align: center;
+        margin-bottom: 1em;
+        color: var(--classic-green-color-v4);
+    }
+
+    main section#faq article div.box h3 {
+        font: 100 1.2em var(--momo-font);
+        color: var(--black-color-v1);
+    }
+
+    main section#faq article div.box p {
+        font: 600 0.8em var(--mozilla-headline-font);
+        color: var(--classic-green-color-v7);
+    }
+
+    footer p {
+        font-size: 1em;
+    }
 }
