@@ -15,11 +15,12 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Momo+Trust+Display&family=Mozilla+Headline:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Momo+Trust+Display&family=Mozilla+Headline:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 
 <body>
@@ -28,9 +29,9 @@
         <a href="#" target="_self"><img src="assets/logo.png" class="logo" alt="Ícone do BlockMan Go"></a>
 
         <nav>
-            <a href="#welcome" target="_self"><i class="fa-solid fa-house"></i></a>
-            <a href="#games" target="_self"><i class="fa-solid fa-gamepad"></i></a>
-
+            <a href="#welcome" target="_self"><i class="fa-solid fa-house" title="Início"></i></a>
+            <a href="#games" target="_self" title="Jogos"><i class="fa-solid fa-gamepad"></i></a>
+            <a href="#faq" target="_self" title="FAQ"><i class="fa-solid fa-circle-question"></i></a>
         </nav>
     </header>
 
@@ -40,53 +41,127 @@
             <p>Um jogo <strong>sandbox</strong> que combina vários minijogos em apenas um só.</p>
             <p>Combina elementos de <strong>Minecraft</strong> e <strong>Roblox</strong></p>
 
-            <div id="adventure">
+            <article>
                 <h2>Aventure-se</h2>
-                <p>Mergulhe nos diversos minijogos que o jogo possui!</p>
-                <p>Convida amigos, jogue online, se comunique com pessoas que você gosta!</p>
-                <p>Crie novas experiências e novas amizades</p>
-            </div>
+                <p>Mergulhe nos diversos minijogos que o jogo possui!</p> <p>Convida amigos, jogue online, se comunique com pessoas que você gosta!</p> <p>Crie novas experiências e novas amizades</p>
+            </article>
 
-            <div id="explore">
+            <article>
                 <h2>Explore</h2>
                 <p>Jogue os jogos que mais combinam com você</p>
                 <p><strong>Construção</strong>, <strong>Combate/Batalha/PVP</strong>, <strong>Parkour</strong>, <strong>Sobrevivência</strong>, <strong>Estratégia</strong>,<br> <strong>Competição</strong>, <strong>Role-Play</strong>, <strong>Corrida</strong>, <strong>FPS</strong> e muito mais...</p>
-            </div>
+            </article>
         </section>
 
         <section id="games">
-            <h2 id="available-games">Jogos Disponíveis</h2>
+            <h2>Jogos Disponíveis</h2>
 
             <article id="minigames">
                 <div id="bed-wars">
                     <figure>
-                        <a href="https://play.google.com/store/apps/details?id=com.sandboxol.indiegame.bedwar&hl=pt_BR" target="_blank">
-                            <img src="assets/games/bed-wars.png" alt="Bed Wars">
-                            <figcaption>Bed Wars</figcaption>
-                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.sandboxol.indiegame.bedwar&hl=pt_BR" target="_blank"> <img src="assets/games/bed-wars.png" alt="Bed Wars"><figcaption>Bed Wars</figcaption></a>
                     </figure>
 
-                    <p>Bed Wars é um minigame de <strong>Combate</strong>, <strong>Estratégia</strong> e <strong>Equipe</strong>, onde seu objetivo é destruir as camas dos times aversários e ser o único sobrevivente junto com sua equipe. O minigame utiliza como sua essência <strong>runas</strong> e <strong>superpoderes</strong>, o que deixa mais difícil especialmente para iniciantes.</p>
+                    <p>Bed Wars é um minigame de <strong>Combate</strong>, <strong>Estratégia</strong> e
+                        <strong>Equipe</strong>, onde seu objetivo é destruir as camas dos times aversários e ser o
+                        único sobrevivente junto com sua equipe. O minigame utiliza como sua essência
+                        <strong>runas</strong> e <strong>superpoderes</strong>, o que deixa mais difícil especialmente
+                        para iniciantes.</p>
                 </div>
 
                 <div id="sky-block">
                     <figure>
-                        <a href="https://play.google.com/store/apps/details?id=com.sandboxol.indiegame.skyblock&hl=pt_BR" target="_blank">
+                        <a href="https://play.google.com/store/apps/details?id=com.sandboxol.indiegame.skyblock&hl=pt_BR"
+                            target="_blank">
                             <img src="assets/games/sky-block.png" alt="Sky Block">
                             <figcaption>Sky Block</figcaption>
                         </a>
                     </figure>
-                    <p>Sky Block é um minigame de <strong>construção</strong> e modos adicionais de <strong>Batalha</strong> unindo temas de <strong>Estratégia</strong>. Você começa numa ilha e seu objetivo é <strong>Coletar Rescursos</strong> por meio de <strong>trocas</strong> o <strong>eventos</strong>. Com esses recursos coletados você pode comprar ou trocar itens.</p>
+                    <p>Sky Block é um minigame de <strong>construção</strong> e modos adicionais de
+                        <strong>Batalha</strong> unindo temas de <strong>Estratégia</strong>. Você começa numa ilha e
+                        seu objetivo é <strong>Coletar Rescursos</strong> por meio de <strong>trocas</strong> o
+                        <strong>eventos</strong>. Com esses recursos coletados você pode comprar ou trocar itens.</p>
                 </div>
 
                 <div id="egg-wars">
                     <figure>
-                        <a href="https://play.google.com/store/apps/details?id=com.sandboxol.indiegame.skyblock&hl=pt_BR" target="_blank">
+                        <a href="https://play.google.com/store/apps/details?id=com.sandboxol.indiegame.skyblock&hl=pt_BR"
+                            target="_blank">
                             <img src="assets/games/egg-wars.png" alt="Egg Wars">
                             <figcaption>Egg Wars</figcaption>
                         </a>
                     </figure>
                     <p>Egg Wars é um minigame de <strong>Batalha</strong> com a mesma temática que o <em>Bed Wars</em>. O Jogo é dividido em 4 equipes com 4 pessoas em cada equipe, totalizando <em>16 jogadores</em> ao total por partida. Seu objetivo é <strong>proteger o seu ovo</strong> e <strong>destruir o ovo das equipes adversárias</strong>. Ganha a equipe que permaneceu vivo até o fim.</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="faq">
+            <h2>FAQ - Perguntas Frequentes</h2>
+
+            <article class="o-que-e-o-blockman-go">
+                <div class="box">
+                    <h3>O que é o BlockMan Go?</h3>
+                    <p>BlockMan Go é um jogo que combina vários minigames em um só, como o <strong>Bed Wars</strong>, <strong>Egg Wars</strong>, <strong>Sky Block</strong>, <strong>Hide and Seek</strong>, <strong>Murder Mystery 2</strong>, entre outros...</p>
+                </div>
+            </article>
+
+            <article class="o-blockman-go-e-gratuito">
+                <div class="box">
+                    <h3>O Blockman GO é gratuito?</h3>
+                    <p>Sim! O BlockMan Go é totalmente gratuito e você pode baixá-lo na <a href="https://play.google.com/store/apps/details?id=com.sandboxol.blockymods&hl=pt_BR" target="_blank">Play Store</a> ou na <a href="https://apps.apple.com/br/app/blockman-go/id1426189000" target="_blank">App Store</a></p>
+                </div>
+            </article>
+
+            <article class="e-disponivel-para-pc">
+                <div class="box">
+                    <h3>O BlockMan Go é disponível para PC?</h3>
+                    <p>Atualmente o BlockMan Go não oferece suporte para plataformas <em>Desktop</em>, porém você pode facilmente jogar por um emulador, como o <a href="https://www.bluestacks.com/pt-br/index.html" target="_blank">BlueStacks</a> ou <a href="https://pt.ldplayer.net/" target="_blank">LDPlayer</a>.</p>
+                </div>
+            </article>
+
+            <article class="quais-sao-as-moedas">
+                <div class="box">
+                    <h3>Quais são as moedas pagas do BlockMan Go?</h3>
+                    <p>O BlockMan go possui as moedas pagas chamadas <strong>Gcubes</strong>. Você pode comprá-las na loja a partir de <em>R$4.99</em>. Elas servem para personalizar sua <em>skin</em> ou comprar <em>itens</em> nos minigames.</p>
+                </div>
+            </article>
+
+            <article class="e-possivel-criar-meu-proprio-jogo">
+                <div class="box">
+                    <h3>É possível criar meu próprio minigame?</h3>
+                    <p>Sim! Você pode personalizar seu próprio minigame (tipo <em>Bed Wars</em>, <em>Egg Wars</em> ou <em>Murder Mystery</em> - mas sem copiá-los) a partir do <strong>BlockMan Editor</strong>. Você também pode criar seu próprio mundo na área do <em>Salão</em>. Lá já vem vários mundos para você mesmo personalizar com algumas coisas pré-embutidas. Portanto, isso não será considerado um minigame, mas sim um <strong>mundo</strong>, com limite de pessoas.</p>
+                </div>
+            </article>
+
+            <article class="posso-jogar-com-amigos">
+                <div class="box">
+                    <h3>Posso Jogar BlockMan Go com meus amigos?</h3>
+                    <p>Sim, e é isso que faz o BlockMan Go um jogo especial. Você pode jogar com seus amigos em qualquer minigame. Você pode ter um limite de <em>500 amigos</em>, o que já é muito suficiente. Não se esqueça que você pode fazer novas amizades também!</p>
+                </div>
+            </article>
+
+            <article class="o-que-e-id">
+                <div class="box">
+                    <h3>O que é ID no BlockMan Go?</h3>
+                    <p>Assim que você cria sua conta, você recebe um ID único, que apenas você tem. Esse ID é muito importante, podendo servir para <em>adicionar amigos</em> e <em>trocar/recuperar de conta</em>. O ID é <strong>criado de 16 em 16</strong>. Por exemplo, a <em>primeira pessoa a entrar no jogo teve o ID 16</em>, a <em>segunda teve o ID 32</em>, a <em>terceira teve o ID 48</em>, e assim por diante...</p>
+                </div>
+            </article>
+
+            <article class="como-personalizo-minha-conta">
+                <div class="box">
+                    <h3>Como personalizo minha conta?</h3>
+                    <p>Deixar a sua conta personalizada é muito bom para fazer novos amigos. Você pode personalizar sua conta na área de conta, e lá terá informações como <em>adicionar foto de perfil (opcional)</em>, <em>alterar seu nome</em>, <em>inserir sua data de nascimento (opcional), inserir uma breve descrição sobre qualquer coisa de no máximo 80 caracteres, a sua bio (opcional)</em></p>
+                    <p>Você também pode inserir sua senha (muito recomendado!) e outros métodos de login como <em>Google</em>, <em>Facebook</em>, <em>E-mail</em> e <em>Questões de Segurança</em>. Preenchendo esses métodos você tem uma conta muito mais segura.</p>
+                </div>
+            </article>
+
+            <article class="como-recupero-minha-conta">
+                <div class="box">
+                    <h3>Como recupero minha conta?</h3>
+                    <p>Para recuperar sua conta, você deve ter ao menos sua senha inserida e algum método de login. Você pode recuperar sua conta indo nas configurações > trocar de conta > esqueci minha senha > (coloque seu ID) e terá duas opções: Questões de Segurança e Código enviado por E-mail.</p>
+                    <p>Se você não possui Questões de Segurança nem E-mail vinculado, você pode ir em configurações > trocar de conta > e selecionar um método de autenticação como <em>Google</em> ou <em>Facebook</em>.</p>
+                    <p>Se nenhuma das dicas funcionou, você pode pedir ajuda via <a href="mailto:bgofficialcontact@sandboxol.com">E-mail Oficial do BlockMan Go</a></p>
                 </div>
             </article>
         </section>
