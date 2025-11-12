@@ -14,6 +14,8 @@
     --classic-green-color-v4: #9ceacc;
     --classic-green-color-v5: #028252;
     --classic-green-color-v6: #89a574;
+    --classic-green-color-v7: #062f00a9;
+
 
     /* Bege */
     --classic-beige-color-v1: #fbe6cb;
@@ -30,7 +32,11 @@
     --classic-white-color-v2: #c3dad2;
 
     /* Cinza */
-    --classic-gray-color-v1: #fbfbfb;
+    --classic-gray-color-v1: #ededed;
+    --classic-gray-color-v2: #cacaca;
+
+    /* Preto */
+    --black-color-v1: #1d1d1e;
 
     /* Hover */
     --hover-effect-v1: #482b02cd;
@@ -179,6 +185,49 @@ main section#games article#minigames div figure img:hover {
     box-shadow: 0px 0px 12.33px rgba(240, 248, 255, 0.344);
 }
 
+main section#faq {
+    background-image: linear-gradient(to bottom, var(--classic-green-color-v1), var(--classic-green-color-v2), var(--classic-green-color-v3), var(--classic-green-color-v1));
+    padding: 30px;
+}
+
+main section#faq h2 {
+    font: 700 3.1em var(--stack-font);
+    text-align: center;
+    margin-bottom: 1em;
+    color: var(--classic-green-color-v4);
+}
+
+main section#faq article {
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.279);
+    background-color: #ffffff39;
+    border-radius: 10px;
+    margin: 1em auto;
+    padding: 1.5em;
+    width: 85%;
+}
+
+main section#faq article div.box h3 {
+    font: 100 2em var(--momo-font);
+    color: var(--black-color-v1);
+}
+
+main section#faq article div.box p {
+    font: 600 1.2em var(--mozilla-headline-font);
+    color: var(--classic-green-color-v7);
+}
+
+main section#faq article div.box a {
+    color: var(--classic-green-color-v4);
+    transition: all 0.3s ease-in-out;
+}
+
+main section#faq article div.box a:hover {
+    text-shadow: 0px 0px 1px var(--classic-green-color-v4);
+}
+
+main section#faq article div.box a:visited {
+    color: var(--classic-green-color-v7);
+}
 
 /* Rodapé */
 footer {
