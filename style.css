@@ -50,6 +50,11 @@
     margin: 0;
 }
 
+::selection {
+    background-color: var(--classic-green-color-v3);
+    color: var(--classic-beige-color-v3);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -237,10 +242,16 @@ footer {
 }
 
 footer p {
-    text-shadow: 0 0 1px var(--classic-beige-color-v8);
+    font: 600 1.3em var(--mozilla-headline-font);
     color: var(--classic-beige-color-v2);
 }
 
 footer a {
     color: var(--classic-beige-color-v4);
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+}
+
+footer a:visited {
+    color: var(--classic-beige-color-v7);
 }
