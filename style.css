@@ -263,6 +263,11 @@ footer a:visited {
     color: var(--classic-beige-color-v7);
 }
 
+body main section strong {
+    font-weight: 900;
+    font-size: 1em;
+}
+
 
 /* Media Queries */
 @media (max-width: 1350px) {
