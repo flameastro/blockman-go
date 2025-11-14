@@ -198,7 +198,7 @@ main section#games article#minigames div figure img:hover {
 }
 
 main section#faq {
-    background-image: linear-gradient(to bottom, var(--classic-green-color-v1), var(--classic-green-color-v2), var(--classic-green-color-v3), var(--classic-green-color-v1));
+    background-image: linear-gradient(to bottom, var(--classic-green-color-v1), var(--classic-green-color-v2), var(--classic-green-color-v3), var(--classic-green-color-v5));
     padding: 10px;
 }
 
@@ -240,6 +240,11 @@ main section#faq article div.box a:hover {
 main section#faq article div.box a:visited {
     color: var(--classic-green-color-v7);
 }
+
+main section#faq article.como-personalizo-minha-conta p.description-examples {
+    margin: 1em;
+}
+
 
 /* Rodapé */
 footer {
