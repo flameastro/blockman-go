@@ -1,13 +1,12 @@
-/* Variáveis */
+/* Variables */
 :root {
-    /* Fontes */
+    /* Fonts */
     --mozilla-headline-font: "Mozilla Headline", sans-serif;
     --momo-font: "Momo Trust Display", sans-serif;
     --stack-font: "Stack Sans Text", sans-serif;
     --archivo-font: "Archivo Black", sans-serif;
 
-    /* Cores */
-    /* Verde */
+    /* Colors */
     --classic-green-color-v1: #01925b;
     --classic-green-color-v2: #017d4f;
     --classic-green-color-v3: #0e634c;
@@ -16,8 +15,6 @@
     --classic-green-color-v6: #89a574;
     --classic-green-color-v7: #062f00a9;
 
-
-    /* Bege */
     --classic-beige-color-v1: #fbe6cb;
     --classic-beige-color-v2: #e6c99d;
     --classic-beige-color-v3: #e3c598;
@@ -27,35 +24,54 @@
     --classic-beige-color-v7: #553201;
     --classic-beige-color-v8: #482b02;
 
-    /* Branco */
     --classic-white-color-v1: #f3fefd;
     --classic-white-color-v2: #c3dad2;
 
-    /* Cinza */
     --classic-gray-color-v1: #ededed;
     --classic-gray-color-v2: #cacaca;
 
-    /* Preto */
     --black-color-v1: #1d1d1e;
 
-    /* Hover */
     --hover-effect-v1: #482b02cd;
 }
 
 
-/* Configurações Gerais */
+/* Geral Styles */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+
+/* Selection */
 ::selection {
     background-color: var(--classic-green-color-v3);
     color: var(--classic-beige-color-v3);
 }
 
+
+/* Scrollbar Styles */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--classic-beige-color-v2);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--classic-green-color-v3);
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--classic-green-color-v2);
+}
+
+
 html {
+    /* Smooth scroll */
     scroll-behavior: smooth;
 }
 
@@ -64,7 +80,6 @@ body {
 }
 
 
-/* Cabeçalho */
 header {
     background-image: url("assets/header.png");
     justify-content: space-between;
@@ -90,7 +105,6 @@ header nav i:hover {
 }
 
 
-/* Conteúdo Principal */
 main {
     box-shadow: 0px 0px 12px #9ba6c4;
 }
@@ -131,7 +145,7 @@ main section#games {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
     color: var(--classic-white-color-v1);
     background-position: center center;
-    background-attachment: fixed; /* Efeito Paralaxe */
+    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
 }
@@ -246,7 +260,6 @@ main section#faq article.como-personalizo-minha-conta p.description-examples {
 }
 
 
-/* Rodapé */
 footer {
     background-color: var(--classic-green-color-v3);
     text-align: center;
