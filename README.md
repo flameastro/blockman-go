@@ -1,6 +1,6 @@
 # BlockMan GO
 
-# <img src="https://twemoji.maxcdn.com/v/latest/svg/1f1fa-1f1f8.svg" width="20" alt="EUA"> BlockMan GO
+# <img src="https://twemoji.maxcdn.com/v/latest/svg/1f1fa-1f1f8.svg" width="20" alt="EUA"> English Version
 
 <img src="assets/banners/extra-larger/banner-extra-larger.png" alt="BlockMan GO Banner">
 
