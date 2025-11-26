@@ -99,7 +99,7 @@ main section#welcome {
     background-image: url("assets/banners/big/banner1-big.png");
     color: var(--classic-beige-color-v8);
     background-position: center center;
-    background-size: 100% 100%;
+    background-size: cover;
     height: 100vh;
     padding: 2em;
 }
@@ -132,14 +132,14 @@ main section#games {
     color: var(--classic-white-color-v1);
     background-position: center center;
     background-attachment: fixed; /* Efeito Paralaxe */
-    background-size: 100% 100%;
+    background-size: cover;
     height: 100vh;
 }
 
 main section#games2 {
     background-image: url("assets/banners/big/banner3-big.png");
     background-position: center center;
-    background-size: 100% 100%;
+    background-size: cover;
     height: 100vh;
 }
 
