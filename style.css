@@ -50,23 +50,33 @@
     color: var(--classic-beige-color-v3);
 }
 
+/* Cursor Style */
+html,
+body {
+    cursor: url("assets/cursor/default.png") 16 16, auto;
+}
+
+html body a {
+    cursor: url("assets/cursor/pointer.png") 16 16, auto;
+}
+
 
 /* Scrollbar Styles */
 body::-webkit-scrollbar {
-  width: 12px;
+    width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--classic-beige-color-v2);
+    background: var(--classic-beige-color-v2);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--classic-green-color-v3);
-  border-radius: 6px;
+    background: var(--classic-green-color-v3);
+    border-radius: 6px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: var(--classic-green-color-v2);
+    background: var(--classic-green-color-v2);
 }
 
 
